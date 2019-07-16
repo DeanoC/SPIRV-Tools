@@ -353,3 +353,4 @@ set(Deps
         )
 
 ADD_LIB(${LibName} "${Interface}" "${Src}" "${Deps}")
+target_compile_definitions(${LibName} PRIVATE _SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING)
